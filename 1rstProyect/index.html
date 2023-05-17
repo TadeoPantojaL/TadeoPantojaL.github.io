@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/1rstProyect/styles.css">
+        <title>Proyect</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+                <p id="description" class="description text-center">
+                    Thank you for taking the time to help us improve the platform
+                </p>
+            </header>
+            <form id="survey-form">
+                <!-- NAME -->
+                <div class="form-group">
+                    <label
+                    id="name-label"
+                    for="name">Name: 
+                        <input type="name"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                        />
+                    </label>
+                </div>
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <label
+                    id="email-label"
+                    for="email">Email: 
+                        <input type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your Email"
+                        required
+                        />
+                    </label>
+                </div>
+                <!-- AGE -->
+                <div class="form-group">
+                    <label
+                    id="number-label"
+                    for="number">Age <span class="clue">(optional)</span> 
+                    </label>
+                    <input type="number"
+                        name="age"
+                        id="number"
+                        class="form-control"
+                        max="99"
+                        min="10"
+                        placeholder="Age"
+                        
+                        />
+                </div>
+                <!-- CUESTION1 -->
+                <div class="form-group">
+                    <p>Which option best describes your current role?</p> 
+                    <select id="dropdown"   name="role" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>    
+                    </select>
+                </div>
+                <!-- RECOMMEND -->
+                <div class="form-group">
+                    <p>Would you recommend freeCodeCamp to a friend?</p> 
+                    <label>
+                        <input class="form-control" value="definitely" type="radio" name="user-recommend" /> Definitely
+                    </label> 
+                    
+                    <label>
+                        <input 
+                        value="maybe"
+                        class="form-control" type="radio" name="user-recommend" /> Maybe</label> 
+                    
+                    <label>
+                        <input 
+                        value="not-sure"
+                        class="inline"
+                        type="radio"  name="user-recommend" /> Not sure</label>   
+                </div>
+                <!-- FEATURE -->
+                <div class="form-group">
+                    <p>What is your favorite feature of freeCodeCamp?</p> 
+                    <select id="dropdown"   name="role" class="form-control" required>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>    
+                    </select>
+                </div>
+                <!-- NAME -->
+                <div class="form-group">
+                    
+                </div>
+                <!-- NAME -->
+                <div class="form-group">
+                    
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
