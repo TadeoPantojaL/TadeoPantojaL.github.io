@@ -9,12 +9,19 @@ body {
     padding: 0;
 }
 
-.contenedor {
+.contenedor  {
     padding: 60px 0;
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
+
+}
+
+.camp{
+    background-color: #919191;  
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -32,9 +39,9 @@ header {
     height: 650px;
     background: #000000;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #91009677, #000000), url("https://images.hdqwalls.com/download/skull-color-sketch-art-4k-5c-1360x768.jpg");
+    background: -webkit-linear-gradient(to left, #91009677, #000000), url(/imgs/skull-color-sketch-art-4k-5c-1360x768.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #91009677, #000000), url("https://images.hdqwalls.com/download/skull-color-sketch-art-4k-5c-1360x768.jpg");
+    background: linear-gradient(to left, #91009677, #000000), url(/imgs/skull-color-sketch-art-4k-5c-1360x768.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -42,7 +49,7 @@ header {
 }
 
 nav {
-    text-align: right;
+    text-align: center;
     padding: 30px 50px 0 0;
 }
 
@@ -51,6 +58,7 @@ nav>a {
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
+    font-size: x-large;
 }
 
 nav>a:hover {
@@ -148,6 +156,18 @@ main .sobre-nosotros{
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
 }
 
+.icon{
+    
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
 .imagen-port>img {
     width: 100%;
     height: 100%;
@@ -170,7 +190,7 @@ main .sobre-nosotros{
 }
 
 .hover-galeria img {
-    width: 250px;
+    width: 200px;
 }
 
 .hover-galeria p {
@@ -197,6 +217,7 @@ main .sobre-nosotros{
     justify-content: space-evenly;
     border-radius: 5px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    margin-top: 25PX;
 }
 
 .cards .card img {
@@ -240,6 +261,7 @@ main .sobre-nosotros{
 
 .servicio-ind img {
     width: 90%;
+    
 }
 
 .servicio-ind h3 {
@@ -287,12 +309,22 @@ footer {
     font-size: 20px;
 }
 
+.content-foo a {
+    color: #00ff22;
+    text-decoration: none;
+}
+.content-foo a:hover {
+    color: #00ccff;
+    text-decoration: underline;
+}
 .titulo-final {
     text-align: center;
     font-size: 24px;
     margin: 20px 0 0 0;
     color: #9e9797;
 }
+
+
 
 @media screen and (max-width: 900px) {
     header {
