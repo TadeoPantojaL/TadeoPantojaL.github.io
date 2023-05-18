@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-
     background: #000000;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #91009677, #000000), url(/imgs/skull-color-sketch-art-4k-5c-1360x768.jpg);
@@ -11,6 +10,9 @@ body {
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .login-box {
     width: 320px;
@@ -23,6 +25,8 @@ body {
     color: white;
     box-sizing: border-box;
     padding: 70px 30px;
+    opacity: 0.85;
+    border-radius: 27px;
 }
 .login-box .img{
     height: 100px;  
@@ -58,7 +62,7 @@ body {
     color: #fff;
     font-size: 16px;
 }
-.boton{
+.login-box .boton{
     border: none;
     outline: none;
     height: 40px;

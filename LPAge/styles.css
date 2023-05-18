@@ -9,6 +9,32 @@ body {
     padding: 0;
 }
 
+.sesion{
+    align-items: right;
+    text-align: right;
+    margin-right: -20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.sesion a{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    align-items: right;
+    text-align: right;
+    margin-right: -20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    
+}
+
 .contenedor  {
     padding: 60px 0;
     width: 90%;
