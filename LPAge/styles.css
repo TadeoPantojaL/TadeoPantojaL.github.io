@@ -10,9 +10,8 @@ body {
 }
 
 .sesion{
-    align-items: right;
+    /* align-items: right; */
     text-align: right;
-    margin-right: -20px;
     margin-top: -20px;
     margin-bottom: 20px;
     margin-left: 20px;
