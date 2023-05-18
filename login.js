@@ -3,7 +3,7 @@ function login() {
     var password = document.getElementById("password").value;
   
     // Realiza la validación de los datos ingresados (puedes personalizar esta parte según tus necesidades)
-    if (username === "usuario" && password === "contraseña") {
+    if (username === "admin" && password === "admin") {
       // Si la validación es exitosa, redirige al usuario a la página de usuario
       window.location.href = "d2.html";
     } else {
