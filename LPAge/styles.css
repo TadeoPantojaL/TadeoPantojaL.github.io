@@ -20,6 +20,23 @@ body {
     font-weight: 300;
     text-decoration: none;
 }
+button  {
+    color: #ffffff;
+    background-color: #ffffff00;
+    border: 0px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-top: 0px;    
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    text-decoration: none;
+    align-items: right;
+}
+
 .sesion a{
     color: #ffffff;
     font-size: 20px;
@@ -31,6 +48,7 @@ body {
     margin-top: 0px;
     margin-bottom: 20px;
     margin-left: 20px;
+;
     
 }
 
