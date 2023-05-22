@@ -10,20 +10,20 @@ body {
 }
 
 .sesion{
-    /* align-items: right; */
+     align-items: right; 
     text-align: right;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: -50px;
     margin-left: 20px;
     color: #ffffff;
     font-size: 20px;
     font-weight: 300;
     text-decoration: none;
 }
-/* button  {
+button  {
     color: #ffffff;
-    background-color: #ffffff00;
-    border: 0px solid #ffffff;
+    background-color: #5900ff67;
+    border: 1px solid #a200ff;
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 20px;
@@ -35,7 +35,8 @@ body {
     margin-right: 0px;
     text-decoration: none;
     align-items: right;
-} */
+}
+
 
 .sesion a{
     color: #ffffff;
