@@ -20,7 +20,7 @@ body {
     font-weight: 300;
     text-decoration: none;
 }
-button  {
+/* button  {
     color: #ffffff;
     background-color: #ffffff00;
     border: 0px solid #ffffff;
@@ -35,7 +35,7 @@ button  {
     margin-right: 0px;
     text-decoration: none;
     align-items: right;
-}
+} */
 
 .sesion a{
     color: #ffffff;
