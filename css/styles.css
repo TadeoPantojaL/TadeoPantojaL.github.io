@@ -511,6 +511,7 @@ footer {
 
     .contaner {
         display: block;
+        align-items: center;
 
 
 
@@ -522,6 +523,7 @@ footer {
         color: #ffffff;
         align-self: center;
         margin-top: 0px;
+        align-items: center;
         margin-bottom: 0px;
         margin-left: 0px;
         margin-right: 0px;
