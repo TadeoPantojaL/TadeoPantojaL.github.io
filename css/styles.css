@@ -499,7 +499,8 @@ footer {
         height: 50px;
         color: #ffffff;
         align-self: center;
-        margin-top: 50px;
+        align-items: center;
+        margin-top: -50px;
         margin-bottom: 0px;
         margin-left: 0px;
         margin-right: 0px;
@@ -511,8 +512,8 @@ footer {
 
     .contaner {
         display: block;
-        align-items: center;
-
+        align-items: top;
+        
 
 
     }
@@ -549,7 +550,7 @@ footer {
         background-color: #6a5acd;
         margin-top: 1px;
         border-radius: 5px;
-        align-items: center;
+        align-items: top;
         align-self: center;
         text-align: center;
         justify-content: center;
