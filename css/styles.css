@@ -705,7 +705,7 @@ footer {
         margin-bottom: 0px;
         margin-left: 0px;
         margin-right: 0px;
-        background: #01491f;
+        background: rgba(0,0,0,.7);
         color: #ffffff;
         border-radius: 250px;
     }
