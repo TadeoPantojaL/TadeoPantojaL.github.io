@@ -544,15 +544,15 @@ footer {
     .menu-icon span {
         width: 200px;
         height: 50px;
-        background-color: rgba(0,0,0,.7);
+        background-color: rgba(62, 0, 255, 0.7);
         margin-top: 1px;
         border-radius: 5px;
-        align-items: bottom;
-        align-self: bottom;
-        text-align: bottom;
-        justify-content: bottom;
-        justify-items: bottom;
-        text-justify: bottom;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        text-justify: center;
 
     }
 
