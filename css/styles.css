@@ -855,7 +855,25 @@ footer {
         padding-left: 1px;
         
     }
-    button{
+    button, img{
+        margin-top: 20px;
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .boton nav{
+        font-size: 10px;
+    }
+    .contaner, .txt, .menu-icon{
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        
+    }
+    .imag{
+        width: 50px;
+        height: 50px;
         margin-top: 20px;
     }
+
 }
