@@ -916,8 +916,6 @@ footer {
     .txtss{
         margin-left: -50px;
     }
-}
-@media screen and (max-width: 462px){
     .logo-nav-container {
         margin-top: 0px;
         height: 150px;
@@ -930,5 +928,14 @@ footer {
         width: 100%;
         padding-left: 30px;
         
+ 
+    }
+    .sesion a {
+        margin-right: 10px;
+    }
+
+    .contenedor-sobre-nosotros img{
+        width: 80%;
+        height: 100%;
     }
 }
