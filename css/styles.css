@@ -19,7 +19,7 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 0px;
-    
+
 
 
 
@@ -33,7 +33,7 @@ body {
     flex-wrap: wrap;
     padding: 0px;
     margin: 0px;
-    
+
 
 }
 
@@ -74,7 +74,7 @@ button {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-
+    margin-right: 100px;
 }
 
 .navs {
@@ -103,7 +103,7 @@ button {
     height: 80px;
     display: flex;
     justify-content: space-between;
-
+    margin-left: -50px;
     align-items: center;
     margin-left: 0px;
     left: 0;
@@ -115,6 +115,7 @@ button {
     margin: 0px;
     padding: 0px;
     list-style: none;
+    margin-left: -100px;
 }
 
 .navigation ul li {
@@ -137,6 +138,7 @@ button {
     width: 80px;
     height: 80px;
     margin: 0px;
+    margin-left: 100px;
 }
 
 .sesion a {
@@ -277,7 +279,7 @@ main .sobre-nosotros {
     margin-bottom: 15px;
 }
 
-.contenido-textos h3 span {
+.contenido-textos h3 span  {
     background: #ae00ff;
     color: azure;
     border-radius: 50%;
@@ -491,15 +493,13 @@ footer {
 
 /* MEDIA QUERIES */
 
-
-
-@media screen and (max-width: 1355px) {
+@media screen and (max-width: 1456px) {
     .cook {
         width: 150px;
         height: 50px;
         color: #ffffff;
-        align-self: center;
-        align-items: center;
+        align-self: top;
+        align-items: top;
         margin-top: -50px;
         margin-bottom: 0px;
         margin-left: 0px;
@@ -511,237 +511,78 @@ footer {
     }
 
     .contaner {
-        display: block;
+        display: contents;
         align-items: top;
-        
-
-
-    }
-
-    span {
-        width: 130px;
-        height: 50p;
-        color: #ffffff;
-        align-self: center;
-        margin-top: 0px;
-        align-items: center;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        background: #6a5acd;
-        color: #ffffff;
-        border-radius: 250px;
-    }
-
-    .menu-icon {
-        margin-top: 10px;
-        display: flex;
-        z-index: 1000;
-        cursor: pointer;
-        width: 130px;
-        height: 60px;
-
-
-    }
-
-    .menu-icon span {
-        width: 200px;
-        height: 50px;
-        background-color: #6a5acd;
-        margin-top: 1px;
-        border-radius: 5px;
-        align-items: top;
-        align-self: center;
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
-        text-justify: center;
-
-    }
-
-    .navigation ul {
-        display: none;
-        position: relative;
-        align-items: center;
-        align-self: center;
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
-        text-justify: center;
-    }
-
-    .navigation ul.show {
-        display: block;
-        position: fixed;
-        align-items: center;
-        align-self: center;
-        justify-content: center;
-        margin-left: 128px;
-        margin-top: 10px;
-        border-radius: 10px;
-        background-color: #120020;
-        height: auto;
-        align-items: center;
-        align-self: center;
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
-        text-justify: center;
-    }
-
-    .navigation {
-        width: 100%;
-        align-items: center;
-        align-self: center;
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
-        text-justify: center;
-    }
-
-    .sesion {
-        align-items: right;
-        text-align: right;
-        margin: 0px;
-        color: #ffffff;
-        font-size: 20px;
-        font-weight: 300;
-        text-decoration: none;
-        margin-top: 0px;
-        align-items: center;
-        align-self: center;
-        text-align: center;
-        justify-content: center;
-        justify-items: center;
-        text-justify: center;
-    }
-
-    button {
-        width: 150px;
-        height: 40px;
-        color: #ffffff;
-        background-color: #5900ff67;
-        border: 1px solid #a200ff;
-        border-radius: 10px;
-        font-size: 15px;
-        font-weight: 300;
-        text-decoration: none;
-        margin: 0;
-        padding: 0px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        cursor: pointer;
-
-    }
-
-    .logo-nav-container {
-        margin-top: 0px;
-        height: 150px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: top;
-        margin: 0px;
-        left: -128px;
-        top: 74;
-        width: 100%;
-
-    }
-
-    .wave-fix {
-        margin-top: 115px;
-        position: fixed;
-        width: 100%;
-        z-index: 997;
-    }
-
-    .navigation ul {
-        margin-top: 0px;
-        padding: 0px;
-        list-style: none;
-        font-size: 14px;
-
-    }
-
-    .navigation ul li {
-        display: block;
-        z-index: 1000;
     }
 
     .imag {
         width: 80px;
         height: 80px;
-        margin-top: 0px;
+        margin: 0px;
+        margin-left: -2px;
+    }
+    button{
+        margin-right: 12px;
     }
 }
 
-@media screen and (max-width: 1122px) {
 
-    .cook {
-        width: 150px;
-        height: 50px;
-        color: #ffffff;
-        align-self: center;
-        margin-top: 50px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        background: #01491f;
-        color: #ffffff;
-        border-radius: 250px;
-
-    }
+@media screen and (max-width: 1355px) {
 
     .contaner {
+        /* margin-left: 30px; */
         display: block;
-
-
+        width: 180px;
+        height: 60px;
+        /* background: #4c00ff; */
+        /* text-align: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-justify: center; */
+        border-radius: 25px;
 
     }
+    
+    .txt {
+        
+        color: #ffffff;
+        margin-top: 20px;
+        /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; */
+        font-size: 30px;
+        display: block;
+        width: 180px;
+        height: 60px;
+        background: #00000057;
+        /* text-align: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-justify: center; */
+        border-radius: 25px;
 
-    span {
-        width: 130px;
-        height: 50p;
-        color: #ffffff;
-        align-self: center;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        background: rgba(0,0,0,.7);
-        color: #ffffff;
-        border-radius: 250px;
+        
     }
 
     .menu-icon {
-        margin-top: 10px;
-        display: flex;
-        z-index: 1000;
-        cursor: pointer;
-        width: 130px;
+        
+        display: block;
+        width: 140px;
         height: 60px;
-
-
+        /* background: #f50000; */
+        /* text-align: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-justify: center; */
+        border-radius: 25px;
     }
 
-    .menu-icon span {
-        width: 200px;
-        height: 50px;
-        background-color: rgba(0,0,0,.5);
-        margin-top: 1px;
-        border-radius: 5px;
-        align-items: bottom;
-        align-self: bottom;
-        text-align: bottom;
-        justify-content: bottom;
-        justify-items: bottom;
-        text-justify: bottom;
-
-    }
+    
 
     .navigation ul {
         display: none;
-        position: relative;
+
         align-items: center;
         align-self: center;
         text-align: center;
@@ -820,12 +661,13 @@ footer {
         height: 150px;
         display: flex;
         justify-content: space-evenly;
-        align-items: top;
-        margin: 0px;
+        align-items: center;
+    
         left: -128px;
         top: 74;
         width: 100%;
-
+        padding-left: 50px;
+        
     }
 
     .wave-fix {
@@ -852,8 +694,11 @@ footer {
         width: 80px;
         height: 80px;
         margin-top: 0px;
+        margin-left: -10;
     }
 }
+
+
 
 @media screen and (max-width: 900px) {
     header {
