@@ -566,7 +566,6 @@ footer {
     }
 }
 
-
 @media screen and (max-width: 1355px) {
 
     .contaner {
@@ -738,8 +737,6 @@ footer {
         margin-left: -10;
     }
 }
-
-
 
 @media screen and (max-width: 900px) {
     header {
@@ -916,7 +913,9 @@ footer {
         height: 50px;
         margin-top: 20px;
     }
-
+    .txtss{
+        margin-left: -50px;
+    }
 }
 @media screen and (max-width: 462px){
     .logo-nav-container {
