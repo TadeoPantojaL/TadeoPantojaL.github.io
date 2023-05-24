@@ -19,12 +19,12 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 0px;
-
-
-
-
 }
 
+.sect{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: mediumvioletred;
+}
 .contaner {
     position: relative;
     display: flex;
@@ -353,7 +353,24 @@ main .sobre-nosotros {
     align-items: center;
     flex-direction: column;
 }
-
+.hover-galeria2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(147, 91%, 27%, 0.603);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #00aeff;
+    font-size: 20px;
+    font-family: serif;
+    text-shadow: #000000 -1px 1px 1px ;
+    
+} 
 .hover-galeria img {
     width: 200px;
 }
@@ -363,6 +380,24 @@ main .sobre-nosotros {
 }
 
 .imagen-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+.hover-galeria2 img {
+    width: 200px;
+}
+
+.hover-galeria2 h2 {
+    color: white;
+    background-color: #120020;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+}
+
+.imagen-port:hover .hover-galeria2 {
     transform: scale(1);
 }
 
@@ -417,7 +452,12 @@ main .sobre-nosotros {
     justify-content: space-between;
     align-items: center;
 }
-
+.servicio-cont img {
+    
+    object-fit:scale-down;
+    border-radius: 110%;
+    display: block;
+}
 .servicio-ind {
     width: 28%;
     text-align: center;
@@ -544,7 +584,7 @@ footer {
 
     }
     
-    .txt {
+    .txtss {
         
         color: #ffffff;
         margin-top: 20px;
@@ -554,6 +594,7 @@ footer {
         width: 180px;
         height: 60px;
         background: #00000057;
+        cursor: pointer;
         /* text-align: center;
         align-items: center;
         justify-content: center;
