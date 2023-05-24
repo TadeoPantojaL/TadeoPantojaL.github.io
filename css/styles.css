@@ -877,3 +877,18 @@ footer {
     }
 
 }
+@media screen and (max-width: 462px){
+    .logo-nav-container {
+        margin-top: 0px;
+        height: 150px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        left: -128px;
+        top: 74;
+        width: 100%;
+        padding-left: 30px;
+        
+    }
+}
