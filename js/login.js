@@ -12,10 +12,10 @@ button.addEventListener('click', (e) => {
   if (data.username == "admin" && data.password == "admin" || data.username == "jmanriquez@tadeonet" && data.password == "12345" || data.username == "mmoreno@tadeonet" && data.password == "12345" || data.username == "cmariscal@tadeonet" && data.password == "12345") {
     window.location.href = "/html/index.html";
     localStorage.setItem("login_sucess", JSON.stringify(data));
-    location.reload()
+    setInterval("location.reload()",60000);
   } else {
     alert("Credenciales incorrectas");
-    location.reload()
+    setInterval("location.reload()",60000);
   }
   
 })
