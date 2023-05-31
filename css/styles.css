@@ -823,6 +823,7 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    
     .wave-fix {
         margin-top: 118px;
         position: fixed;
