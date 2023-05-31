@@ -3,9 +3,9 @@ body {
     padding: 0;
     background: #000000;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #81F781, #000000), url(/imgs/skull-color-sketch-art-4k-5c-1360x768.jpg);
+    background: -webkit-linear-gradient(to left, #8400ff6b, #000000), url(/imgs/skull-color-sketch-art-4k-5c-1360x768.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #81F781, #000000), url(/imgs/skull-color-sketch-art-4k-5c-1360x768.jpg);
+    background: linear-gradient(to left, #8400ff6b, #000000), url(/imgs/skull-color-sketch-art-4k-5c-1360x768.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size:auto, cover;
     font-family: sans-serif;

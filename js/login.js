@@ -5,7 +5,7 @@ const button = document.getElementById('boton');
 button.addEventListener('click', (e) => {
   e.preventDefault();
   const data = {
-    username: user.value,
+    username: user.value.toLowerCase(),
     password: pass.value
   }
 
