@@ -15,6 +15,36 @@ body {
     display: block;
 }
 
+main .avisos{
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10%;
+    padding-right:10%;
+   
+    background: #f1f1f1;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    text-justify: center;
+    border-top: 5px solid #00ff40;
+    border-bottom: 5px solid #00ff40;
+    border-left: 5px solid #00ff40;
+    border-right: 5px solid #00ff40;
+    
+}
+
 .men {
     margin-top: auto;
     margin-bottom: auto;
@@ -117,7 +147,38 @@ button {
     list-style: none;
     margin-left: -100px;
 }
+.avisos ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  
 
+}
+.avisos .poin{
+    width: 70%;
+    height: 70%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    list-style: none;
+}
+.avisos img{
+    width: 40%;
+    height: 40%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+}
 .navigation ul li {
     display: inline-block;
 }
