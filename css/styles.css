@@ -1,12 +1,23 @@
 body {
     font-family: 'Open Sans';
     margin: 0;
+    
+    
+}
+html ::-webkit-scrollbar {
+    width: 10px;
+    background: #000;
+}
+html ::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: #c300ff;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 
@@ -38,10 +49,10 @@ main .avisos{
     justify-content: center;
     justify-items: center;
     text-justify: center;
-    border-top: 0px solid #00ff40;
-    border-bottom: 10px solid #00ff40;
-    border-left: 100px solid #00ff40;
-    border-right: 100px solid #00ff40;
+    border-top: 10px solid #0061181e;
+    border-bottom: 10px solid #0061181e;
+    border-left: 100px solid #0061181e;
+    border-right: 100px solid #0061181e;
     
 }
 .avisos >.contenedor-sobre-nosotros >.contenido-textos{
@@ -559,7 +570,7 @@ main .sobre-nosotros {
 .servicio-cont img {
     
     object-fit:scale-down;
-    border-radius: 110%;
+    border-radius:0%;
     display: block;
 }
 .servicio-ind {
