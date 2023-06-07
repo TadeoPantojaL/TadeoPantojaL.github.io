@@ -10,7 +10,8 @@ html ::-webkit-scrollbar {
 }
 html ::-webkit-scrollbar-thumb {
     width: 10px;
-    background: #c300ff;
+    background: #c300ff98;
+    border-radius: 10px;
 }
 
 * {
