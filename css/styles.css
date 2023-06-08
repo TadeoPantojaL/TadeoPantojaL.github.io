@@ -26,7 +26,15 @@ html ::-webkit-scrollbar-thumb {
     display: none;
     display: block;
 }
-
+.list{
+    display: flex;
+    text-justify: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: left;
+}
 main .avisos{
     
     margin-top: 0px;
