@@ -34,6 +34,12 @@ html ::-webkit-scrollbar-thumb {
     justify-content: center;
     justify-items: center;
     text-align: left;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 main .avisos{
     
