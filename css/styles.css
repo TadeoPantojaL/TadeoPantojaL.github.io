@@ -20,9 +20,24 @@ html ::-webkit-scrollbar-thumb {
     padding: 0;
     
 }
+.cap{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+    border-color: #00aeff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}   
 
-
-.menu.icon {
+.menu .icon {
     display: none;
     display: block;
 }
