@@ -9,7 +9,7 @@ button.addEventListener('click', (e) => {
     password: pass.value
   }
 
-  if (data.username == "admin" && data.password == "admin" || data.username == "jmanriquez@tadeonet" && data.password == "12345" || data.username == "mmoreno@tadeonet" && data.password == "12345" || data.username == "cmariscal@tadeonet" && data.password == "12345") {
+  if (data.username == "admin" && data.password == "admin" || data.username == "dflores@netwey" && data.password == "12345" || data.username == "jmanriquez@tadeonet" && data.password == "12345" || data.username == "mmoreno@tadeonet" && data.password == "12345" || data.username == "cmariscal@tadeonet" && data.password == "12345") {
     window.location.href = "/html/index.html";
     localStorage.setItem("login_sucess", JSON.stringify(data));
     
