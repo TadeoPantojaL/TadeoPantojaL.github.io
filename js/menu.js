@@ -1,12 +1,1 @@
-jQuery('document').ready(function($){
-    var menuBtn = $('.menu-icon'),
-        menu = $('.navigation ul');
-
-    menuBtn.click(function(){
-        if(menu.hasClass('show')){
-            menu.removeClass('show');
-        }else{
-            menu.addClass('show');
-        }
-    });
-});
+var _0x48f8=["\x2E\x6D\x65\x6E\x75\x2D\x69\x63\x6F\x6E","\x2E\x6E\x61\x76\x69\x67\x61\x74\x69\x6F\x6E\x20\x75\x6C","\x73\x68\x6F\x77","\x68\x61\x73\x43\x6C\x61\x73\x73","\x72\x65\x6D\x6F\x76\x65\x43\x6C\x61\x73\x73","\x61\x64\x64\x43\x6C\x61\x73\x73","\x63\x6C\x69\x63\x6B","\x72\x65\x61\x64\x79","\x64\x6F\x63\x75\x6D\x65\x6E\x74"];jQuery(_0x48f8[8])[_0x48f8[7]](function(_0x30d0x1){var _0x30d0x2=_0x30d0x1(_0x48f8[0]),_0x30d0x3=_0x30d0x1(_0x48f8[1]);_0x30d0x2[_0x48f8[6]](function(){if(_0x30d0x3[_0x48f8[3]](_0x48f8[2])){_0x30d0x3[_0x48f8[4]](_0x48f8[2])}else{_0x30d0x3[_0x48f8[5]](_0x48f8[2])}})})

@@ -1,14 +1,1 @@
-const username = JSON.parse(localStorage.getItem('login_sucess')) || false
-if (!username) {
-    window.location.href = '/index.html'
-    
-}
-
-const logout = document.querySelector('#logout_button')  
-
-logout.addEventListener('click', () => {
-    alert('Sesión cerrada')
-    localStorage.removeItem('login_sucess')
-    window.location.href = '/index.html'
-    
-})
+var _0xd07d=["\x6C\x6F\x67\x69\x6E\x5F\x73\x75\x63\x65\x73\x73","\x67\x65\x74\x49\x74\x65\x6D","\x70\x61\x72\x73\x65","\x68\x72\x65\x66","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x2F\x69\x6E\x64\x65\x78\x2E\x68\x74\x6D\x6C","\x23\x6C\x6F\x67\x6F\x75\x74\x5F\x62\x75\x74\x74\x6F\x6E","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x63\x6C\x69\x63\x6B","\x53\x65\x73\x69\xF3\x6E\x20\x63\x65\x72\x72\x61\x64\x61","\x72\x65\x6D\x6F\x76\x65\x49\x74\x65\x6D","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72"];const username=JSON[_0xd07d[2]](localStorage[_0xd07d[1]](_0xd07d[0]))||!1;if(!username){window[_0xd07d[4]][_0xd07d[3]]=_0xd07d[5]};const logout=document[_0xd07d[7]](_0xd07d[6]);logout[_0xd07d[11]](_0xd07d[8],()=>{alert(_0xd07d[9]);localStorage[_0xd07d[10]](_0xd07d[0]);window[_0xd07d[4]][_0xd07d[3]]=_0xd07d[5]})

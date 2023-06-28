@@ -12,41 +12,78 @@
     <link rel="stylesheet" href="/css/styles.css">
     <title>MY FILES</title>
 </head>
+<section class="barmenu">
+    <div class="bars__menu">
+        <span class="line1__bars-menu"></span>
+        <span class="line2__bars-menu"></span>
+        <span class="line3__bars-menu"></span>
 
+    </div>
+    <section class="others"><button class="boton" id="logout_button">Cerrar Sesion</button></section>
+
+</section>
+<sec class="menus">
+    <nav id="menu-dash">
+        <img src="/imgs/DALL_E_2023-05-23_00.39.28-removebg-preview-removebg-preview.png" alt="">
+
+        <ul>
+            <li><a href="/html/index.html">INICIO</a></li>
+            <li><a href="/html/AvisosImportantes.html">AVISOS</a></li>
+            <li><a href="/html/plantillas.html">PLANTILLAS</a>
+                <ul class="secont" style="--cantidad-items:13">
+                    <li><a href="/html/plantillas.html#informacionatc">INFORMACIÓN</a>
+                        <ul class="second" style="--cantidad-items:3">
+                            <li><a href="/html/plantillas.html#informacionatc">ATC</a></li>
+                            <li><a href="/html/plantillas.html#informacionservicio">SERVICIO</a></li>
+                            <li><a href="/html/plantillas.html#recargas">RECARGAS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/html/plantillas.html#bienvenida">INTERACCIÓN</a>
+                        <ul class="second" style="--cantidad-items:5">
+                            <li><a href="/html/plantillas.html#bienvenida">BIENVENIDA</a></li>
+                            <li><a href="/html/plantillas.html#presencia">PRESENCIA</a></li>
+                            <li><a href="/html/plantillas.html#despedida">DESPEDIDA</a></li>
+                            <li><a href="/html/plantillas.html#fueradehorario">HORARIO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/html/plantillas.html#actualizaciondedatos">CLIENTE</a>
+                        <ul class="second" style="--cantidad-items:5">
+                            <li><a href="/html/plantillas.html#actualizaciondedatos">ACTUALIZAR DATOS</a></li>
+                            <li><a href="/html/plantillas.html#cambiodecoordenadas">COORDENADAS</a></li>
+                            <li><a href="/html/plantillas.html#recargas">RECARGAS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="/html/plantillas.html#lentitudintermitenciafdd">SERVICIO</a>
+                        <ul class="second" style="--cantidad-items:7">
+                            <li><a href="/html/plantillas.html#lentitudintermitenciafdd">LENTITUD E INTERMITENCIA</a></li>
+                            <li><a href="/html/plantillas.html#fallamasiva">FALLA MASIVA</a></li>
+                            <li><a href="/html/plantillas.html#imeilock">IMEILOCK</a>
+                            </li>
+                            <li><a href="/html/plantillas.html#apn">APN</a>
+                            </li>
+                            <li><a href="/html/plantillas.html#tablaapn">TABLA APN</a>
+                            </li>
+                            <li><a href="/html/plantillas.html#reportenrmapn">REPORTE APN</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/html/herramientas.html">HERRAMIENTAS</a></li>
+            <li><a href="/html/recursos.html">RECURSOS</a>
+                <ul style="--cantidad-items:3">
+                    <li><a href="/html/recursos.html#portafolio">ENLACES</a></li>
+                    <li><a href="/html/recursos.html#excel">EXCEL</a></li>
+                    <li><a href="/html/recursos.html#">RESOURSES</a></li>
+                </ul>
+            </li>
+            <li><a href="/html/modems.html">MODEMS</a></li>
+        </ul>
+    </nav>
+</sec>
 <body>
     <header class="header">
-        <div class="navs">
-            <!--  -->
-            <nav class="navigation logo-nav-container">
-                <a href="/html/index.html"><img class="imag"
-                        src="/imgs/DALL_E_2023-05-23_00.39.28-removebg-preview-removebg-preview.png" alt=""></a>
-                <section class="contaner">
-                    <div class="menu-icon"><span class="txtss"><b>Ver menú</b></span></div>
-                    <div class="men">
-                        <ul class="logo-nav-container">
-                            <li><a href="/html/index.html">Inicio</a></li>
-                            <li><a href="#links">Enlaces</a></li>
-                            <li><a href="#excel">Excel</a></li>
-                            <li> <a href="#apn">APN</a></li>
-                            <li> <a href="/html/AvisosImportantes.html">AVISOS</a></li>
-
-                            <!-- <li><a href="#mission">Misiones</a></li>
-                            <li><a href="/html/recursos.html">Recursos</a></li> -->
-                        </ul>
-                    </div>
-                </section>
-
-                <section><button class="boton" id="logout_button">Cerrar Sesion</button></section>
-            </nav>
-            <!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
-
-
-        </div>
-        <div class="wave-fix" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
-                preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M-7.62,5.45 C212.47,73.53 273.42,-26.13 516.08,22.22 L500.00,0.00 L0.00,0.00 Z"
-                    style="stroke: none; fill: rgb(0, 0, 0);"></path>
-            </svg></div>
         <section class="textos-header">
             <h1><b>!Toma lo que necesites!</b></h1>
             <h2><b>Si necesisas conocer los usos de cada herramenta, te recomiendo contactarme</b></h2>
@@ -234,6 +271,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js
     "></script>
     <script src="/js/menu.js"></script>
+    <script src="/js/menuindextry.js"></script>
 </body>
 
 </html>
