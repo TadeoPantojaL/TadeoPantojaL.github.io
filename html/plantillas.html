@@ -24,7 +24,31 @@
             <span class="line3__bars-menu"></span>
 
         </div>
-        <section class="others"><button class="boton" id="logout_button">Cerrar Sesion</button></section>
+
+        <section class="others">
+            <section class="titlewelcome">
+               <div class="boxy"></div>
+                <h2>
+                    <!-- dar bienvenida personalizada -->
+                    <script>
+                        var d = new Date();
+                        var time = d.getHours();
+                        var userData = JSON.parse(localStorage.getItem('login_sucess'));
+                        var name = userData ? userData.nombre : "Invitado";
+
+                        if (time < 12) {
+                            document.write("Buenos días, " + name);
+                        } else if (time < 18) {
+                            document.write("Buenas tardes, " + name);
+                        } else {
+                            document.write("Buenas noches, " + name);
+                        }
+                    </script>
+                </h2>
+                <button class="boton" id="logout_button">Cerrar Sesion</button>
+            </section>
+            
+        </section>
 
     </section>
     <sec class="menus">
@@ -37,10 +61,11 @@
                 <li><a href="/html/plantillas.html">PLANTILLAS</a>
                     <ul class="secont" style="--cantidad-items:13">
                         <li><a href="/html/plantillas.html#informacionatc">INFORMACIÓN</a>
-                            <ul class="second" style="--cantidad-items:3">
+                            <ul class="second" style="--cantidad-items:4.2">
                                 <li><a href="/html/plantillas.html#informacionatc">ATC</a></li>
                                 <li><a href="/html/plantillas.html#informacionservicio">SERVICIO</a></li>
                                 <li><a href="/html/plantillas.html#recargas">RECARGAS</a></li>
+                                <li><a href="/html/plantillas.html#consumos">CONSUMOS</a></li>
                             </ul>
                         </li>
                         <li><a href="/html/plantillas.html#bienvenida">INTERACCIÓN</a>
@@ -61,7 +86,8 @@
                         </li>
                         <li><a href="/html/plantillas.html#lentitudintermitenciafdd">SERVICIO</a>
                             <ul class="second" style="--cantidad-items:7">
-                                <li><a href="/html/plantillas.html#lentitudintermitenciafdd">LENTITUD E INTERMITENCIA</a></li>
+                                <li><a href="/html/plantillas.html#lentitudintermitenciafdd">LENTITUD E
+                                        INTERMITENCIA</a></li>
                                 <li><a href="/html/plantillas.html#fallamasiva">FALLA MASIVA</a></li>
                                 <li><a href="/html/plantillas.html#imeilock">IMEILOCK</a>
                                 </li>
@@ -98,7 +124,7 @@
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
                 <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #230136;"></path>
+                    style="stroke: none; fill: #230136      ;"></path>
             </svg></div>
     </header>
     <main>
@@ -176,7 +202,13 @@
             <h2><i><mark>----BIENVENIDA----</mark></i></h2>
             <H3>Hola. Muchas gracias por comunicarse a la línea de atención a clientes de NETWEY</H3>
             <br>
-            <h3>Mi nombre es <i><mark>NOMBRE_DE_ASESOR</mark></i>. <br> seré tu asesor Netwey</h3>
+            <h3>Mi nombre es
+                <script>
+                    var userData = JSON.parse(localStorage.getItem('login_sucess'));
+                    var name = userData ? userData.nombre : "Invitado";
+                    document.write(name);
+                </script> <br> seré tu asesor Netwey
+            </h3>
             <br>
             <h3>Para poderle brindar el servicio sin problema alguno requiero que me proporcione los siguientes datos
                 por favor: </h3>
@@ -267,8 +299,14 @@
                     En Netwey estamos trabajando para mejorar tu experiencia, te pedimos nos apoyes contestando una
                     breve encuesta de 4 preguntas. <br>
                     https://docs.google.com/forms/d/1C1xBnK2SxHET4Y2MEN0mAg4kaHD4K_Ds-hhH1H2drHE/edit?usp=sharing <br>
-                    Gracias por contactar al centro de atención a clientes Netwey, te atendió NOMBRE_DE_ASESOR, hasta
-                    luego.</b></p>
+                    Gracias por contactar al centro de atención a clientes Netwey, te atendió
+                    <script>
+                        var userData = JSON.parse(localStorage.getItem('login_sucess'));
+                        var name = userData ? userData.nombre : "Invitado";
+                        document.write(name);
+                    </script> , hasta
+                    luego.
+                </b></p>
             <br>
             <h3>
                 <mark>
@@ -324,10 +362,10 @@
             <!-- <img src="/imgs/ubicación.gif" class="imagen-about-us" alt=""> -->
             <div class="list">
                 <div class="cap">
-                    <video src="/imgs/ubicación.mp4" width=100%  height=100% controls poster="vistaprevia.jpg">
+                    <video src="/imgs/ubicación.mp4" width=100% height=100% controls>
                         Lo sentimos. Este vídeo no puede ser reproducido en tu navegador.<br>
-                        La versión descargable está disponible en <a href="URL">Enlace</a>. 
-                        </video>
+                        La versión descargable está disponible en <a href="URL">Enlace</a>.
+                    </video>
                 </div>
             </div>
             <h3>
@@ -651,10 +689,10 @@
                     <br>https://www.speedtest.net/es</b></h2><br>
             <div class="list">
                 <div class="cap">
-                    <video src="/imgs/speed.mp4" width=100%  height=100% controls poster="vistaprevia.jpg">
+                    <video src="/imgs/speed.mp4" width=100% height=100% controls poster="">
                         Lo sentimos. Este vídeo no puede ser reproducido en tu navegador.<br>
-                        La versión descargable está disponible en <a href="URL">Enlace</a>. 
-                        </video>
+                        La versión descargable está disponible en <a href="URL">Enlace</a>.
+                    </video>
                 </div>
             </div><br>
             <h2><mark>Si la velocidad que marca es MAYOR a 3 MB es necesario indicarle lo siguiente:</mark></h2>
@@ -1427,6 +1465,52 @@
 
             </div>
         </div>
+        <div id="consumos" class="avisos">
+            <h2><b>CONSUMOS</b></h2>
+            <h3><mark>Si el cliente nos indica que su consumo de datos es muy alto, es importante validar lo
+                    siguiente:</mark></h3><br>
+            <ul>
+                <li><b>¿Cuántos dispositivos tiene conectados a su equipo?</b></li>
+                <li><b>¿Cuántas horas al día utiliza su servicio?</b></li>
+                <li><b>¿Qué tipo de uso le da a su servicio?</b></li>
+            </ul><br>
+            <h3><mark>Si al validar lo anterior, notamos que el cliente está consumiendo en su mayoria en servicios que
+                    consumen demasiados Gbs, como lo es Netflix, Amazon, Disney, Youtube, etc.</h3> </mark>
+
+            <h3><mark><br> Podemos indicarle que esto es un posible causante de que sus Gbs se estén consumiendo
+                    demasiado rápido. <br> Por lo que podremos ofrecerle generar un reporte para solicitar los consumos
+                    de sus Gbs <br><br><b>ES IMPORTANTE RECORDAR QUE DE PREFERENCIA SOLO GENERAR REPORTE PARA LOS
+                        ULTIMOS 30 DÍAS, YA QUE DE LO CONTRARIO PODRÍA TARDAR MÁS LA RESPUESTA POR PARTE DE BACK
+                        OFFICE</b></mark></h3>
+            <h4><br><b><i>Lamento indicarle lo siguiente, los consumos que maneja en su cuenta no muestran alguna
+                        afectación en el consumo de sus Gbs, sin embargo, entendiendo la duda que pueda generarle,
+                        podemos solicitar se valide la distribución de sus consumos, para detectar si hubo un problema
+                        al momento de su recarga, de igual manera es importante mencionarle que por seguriidad y
+                        privacidad no podemos indicarle en qué sitios se han usados sus datos para navegar, solamente
+                        podemos validar los horarios en los que se utillizó. </i></b></h4><br>
+            <h3><mark>Una vez que el clien te nos indica que desea generar su reporte, Lo generaremos de la siguiente
+                    manera: </mark></h3><br>
+            <h2><b><mark>PLANTILLA PARA TICKET DE: SOLICITUD DE CONSUMOS</mark></b></h2>
+            <ul>
+                <li><b>Solicitud de consumos – DN 10 dígitos</b></li>
+                <li><b>Nombre del titular:</b></li>
+                <li><b>Teléfono:</b></li>
+                <li><b>Coordenadas:</b></li>
+                <li><b>Dirección:</b></li>
+                <li><b>Correo Electrónico:</b></li>
+                <li><b>GB restantes:</b></li>
+                <li><b>Fecha de expiración:</b></li>
+                <li><b>Modelo de equipo:</b></li>
+                <li><b>IMEI:</b></li>
+                <li><b>Fecha de alta:</b></li>
+                <li><b>Status de la línea:</b></li>
+                <h4> <b><br> Descripción de la falla:</b><br>Cliente indica que su consumo de datos es muy alto, se le
+                    indica que se puede generar un reporte para validar sus consumos de su recarga de la fecha
+                    <mark><b>DD/MM/AAAA HH:MM:SS</b></mark>, el cliente acepta y se genera el
+                    reporte.
+                </h4><br>
+            </ul>
+
         </div>
 
     </main>

@@ -22,7 +22,30 @@
             <span class="line3__bars-menu"></span>
 
         </div>
-        <section class="others"><button class="boton" id="logout_button">Cerrar Sesion</button></section>
+        <section class="others">
+            <section class="titlewelcome">
+               <div class="boxy"></div>
+                <h2>
+                    <!-- dar bienvenida personalizada -->
+                    <script>
+                        var d = new Date();
+                        var time = d.getHours();
+                        var userData = JSON.parse(localStorage.getItem('login_sucess'));
+                        var name = userData ? userData.nombre : "Invitado";
+
+                        if (time < 12) {
+                            document.write("Buenos días, " + name);
+                        } else if (time < 18) {
+                            document.write("Buenas tardes, " + name);
+                        } else {
+                            document.write("Buenas noches, " + name);
+                        }
+                    </script>
+                </h2>
+                <button class="boton" id="logout_button">Cerrar Sesion</button>
+            </section>
+            
+        </section>
 
     </section>
     <sec class="menus">
@@ -35,10 +58,11 @@
                 <li><a href="/html/plantillas.html">PLANTILLAS</a>
                     <ul class="secont" style="--cantidad-items:13">
                         <li><a href="/html/plantillas.html#informacionatc">INFORMACIÓN</a>
-                            <ul class="second" style="--cantidad-items:3">
+                            <ul class="second" style="--cantidad-items:4.2">
                                 <li><a href="/html/plantillas.html#informacionatc">ATC</a></li>
                                 <li><a href="/html/plantillas.html#informacionservicio">SERVICIO</a></li>
                                 <li><a href="/html/plantillas.html#recargas">RECARGAS</a></li>
+                                <li><a href="/html/plantillas.html#consumos">CONSUMOS</a></li>
                             </ul>
                         </li>
                         <li><a href="/html/plantillas.html#bienvenida">INTERACCIÓN</a>
@@ -59,7 +83,8 @@
                         </li>
                         <li><a href="/html/plantillas.html#lentitudintermitenciafdd">SERVICIO</a>
                             <ul class="second" style="--cantidad-items:7">
-                                <li><a href="/html/plantillas.html#lentitudintermitenciafdd">LENTITUD E INTERMITENCIA</a></li>
+                                <li><a href="/html/plantillas.html#lentitudintermitenciafdd">LENTITUD E
+                                        INTERMITENCIA</a></li>
                                 <li><a href="/html/plantillas.html#fallamasiva">FALLA MASIVA</a></li>
                                 <li><a href="/html/plantillas.html#imeilock">IMEILOCK</a>
                                 </li>
