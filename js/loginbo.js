@@ -27,7 +27,7 @@ button.addEventListener('click', (e) => {
     'jpliego': { nombre: 'Jonatyhan Pliego', password: '12345' }
   }
   if (data.username in bousuarios && data.password === bousuarios[data.username].password) {
-    window.location.href = "/html/boarchive.html";
+    window.location.href = "/html/back_office.html";
     localStorage.setItem("bologin_sucess", JSON.stringify(usuarios[data.username]));
   } else {
     alert("Credenciales incorrectas");
