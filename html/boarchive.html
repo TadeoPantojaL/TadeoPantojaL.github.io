@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/imgs/ded.png" />
+    <link rel="stylesheet" href="/css/stylesbo.css">
+    <link rel="stylesheet" href="/css/menubars.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <section class="barmenu">
+        <div class="bars__menu">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+
+        </div>
+        <section class="others">
+            <section class="titlewelcome">
+               <div class="boxy"></div>
+                <h2>
+                    <!-- dar bienvenida personalizada -->
+                    <script>
+                        var d = new Date();
+                        var time = d.getHours();
+                        var userData = JSON.parse(localStorage.getItem('login_sucess'));
+                        var name = userData ? userData.nombre : "Invitado";
+
+                        if (time < 12) {
+                            document.write("Buenos días, " + name);
+                        } else if (time < 18) {
+                            document.write("Buenas tardes, " + name);
+                        } else {
+                            document.write("Buenas noches, " + name);
+                        }
+                    </script>
+                </h2>
+                <button class="boton" id="logout_button">Cerrar Sesion</button>
+            </section>
+            
+        </section>
+
+    </section>
+    <sec class="menus">
+        <nav id="menu-dash">
+            <img src="/imgs/DALL_E_2023-05-23_00.39.28-removebg-preview-removebg-preview.png" alt="">
+
+            <ul>
+                <li><a href="/html/index.html">INICIO</a></li>
+                <li><a href="/html/back_office.html">BO ARCHIVE</a></li>
+                <!-- <li><a href="/html/AvisosImportantes.html">AVISOS</a></li>
+                <li><a href="/html/plantillas.html">PLANTILLAS</a>
+                    <ul class="secont" style="--cantidad-items:13">
+                        <li><a href="/html/plantillas.html#informacionatc">INFORMACIÓN</a>
+                            <ul class="second" style="--cantidad-items:4.2">
+                                <li><a href="/html/plantillas.html#informacionatc">ATC</a></li>
+                                <li><a href="/html/plantillas.html#informacionservicio">SERVICIO</a></li>
+                                <li><a href="/html/plantillas.html#recargas">RECARGAS</a></li>
+                                <li><a href="/html/plantillas.html#consumos">CONSUMOS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/plantillas.html#bienvenida">INTERACCIÓN</a>
+                            <ul class="second" style="--cantidad-items:5">
+                                <li><a href="/html/plantillas.html#bienvenida">BIENVENIDA</a></li>
+                                <li><a href="/html/plantillas.html#presencia">PRESENCIA</a></li>
+                                <li><a href="/html/plantillas.html#despedida">DESPEDIDA</a></li>
+                                <li><a href="/html/plantillas.html#fueradehorario">HORARIO</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/plantillas.html#actualizaciondedatos">CLIENTE</a>
+                            <ul class="second" style="--cantidad-items:5">
+                                <li><a href="/html/plantillas.html#actualizaciondedatos">ACTUALIZAR DATOS</a></li>
+                                <li><a href="/html/plantillas.html#cambiodecoordenadas">COORDENADAS</a></li>
+                                <li><a href="/html/plantillas.html#recargas">RECARGAS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/plantillas.html#lentitudintermitenciafdd">SERVICIO</a>
+                            <ul class="second" style="--cantidad-items:7">
+                                <li><a href="/html/plantillas.html#lentitudintermitenciafdd">LENTITUD E
+                                        INTERMITENCIA</a></li>
+                                <li><a href="/html/plantillas.html#fallamasiva">FALLA MASIVA</a></li>
+                                <li><a href="/html/plantillas.html#imeilock">IMEILOCK</a>
+                                </li>
+                                <li><a href="/html/plantillas.html#apn">APN</a>
+                                </li>
+                                <li><a href="/html/plantillas.html#tablaapn">TABLA APN</a>
+                                </li>
+                                <li><a href="/html/plantillas.html#reportenrmapn">REPORTE APN</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/html/herramientas.html">HERRAMIENTAS</a></li>
+                <li><a href="/html/recursos.html">RECURSOS</a>
+                    <ul style="--cantidad-items:3">
+                        <li><a href="/html/recursos.html#portafolio">ENLACES</a></li>
+                        <li><a href="/html/recursos.html#excel">EXCEL</a></li>
+                        <li><a href="/html/recursos.html#">RESOURSES</a></li>
+                    </ul>
+                </li>
+                <li><a href="/html/modems.html">MODEMS</a></li>
+                <li><a href="/html/Non-typing-report.html">Non-typing report</a></li> -->
+            </ul>
+        </nav>
+    </sec>
+    <header class="header">
+        
+        <section class="textos-header">
+            <h1>Recursos Back office</h1>
+            <h2>Sitio oficial de Back office Nexo-Netwey</h2>
+        </section>
+        <!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
+
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(255, 255, 255);"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section id="soy" class="contenedor sobre-nosotros">
+            <h2 class="titulo">LIGAS DE ACCESO A FORMULARIOS:</h2>
+            <div class="contenedor-sobre-nosotros">
+            
+                <div class="contenido-textos">
+                    <h3><span>1</span>TICKET MAL GENERADO</h3>
+                    
+                        <p><b><a href="https://docs.google.com/forms/d/1NO6nn7fQytTvY7ceGpaOHo23z8tyjzAPHWaK6jB20gk/edit" target="_blank"><b>AQUÍ SUBE EL REPORTE DEL ASESOR DE FRONT</b></a></b></p>
+                    <h3><span>2</span>VALIDACIÓN DE DATOS</h3>
+                    <p><b><a href="https://docs.google.com/forms/d/1d5SO4Xl80YjhyjiKSwIdBkQJwVXV-J7bAb-P-Y-vJzo/edit" target="_blank"><b>AQUI SUBE LA INFORMACIÓN DE LA VALIDACIÓN DEL PAGO</b></a></b></p>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="soy" class="contenedor sobre-nosotros">
+            <h2 class="titulo">LIGAS DE DRIVES</h2>
+            <div class="contenedor-sobre-nosotros">
+                    
+                <div class="contenido-textos">
+                    <h3><span>1</span>REGISTROS BACK OFFICE</h3>
+                    <p><b><a href="https://docs.google.com/spreadsheets/d/1vR6Zcv2u_ZsQAYWHriHMkr0eDRNwYUKu6YORtxRLY3c/edit#gid=2035702024" target="_blank">REGISTRO DONDE DAREMOS SEGUIMIENTOS EN GENERAL</a></b></p>
+                            <img src="/BACKOFFICE/REGISTROPS BACKOFFICE.jpg" alt="1st image" class="imagen-about-us">
+                    <h3><span>2</span>Autor</h3>
+                    <p><b><a href="https://docs.google.com/spreadsheets/d/1u7rJ3b8bU1PX86BjHCHTccriFDkwwv0Lp1Ok4ADDqsI/edit#gid=634844589" target="_blank">BASES DE BACK OFFICE</a></b></p>
+                    <img src="/BACKOFFICE/REGISTROPS BACKOFFICE.jpg" alt="1st image" class="imagen-about-us">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>5620849509</p>
+            </div>
+            <div class="content-foo">
+                <h4>Github</h4>
+                <p><a class="github" target="_blank" href="https://github.com/TadeoPantojaL">TadeoPantojaL</a></p>
+            </div>
+            <div class="content-foo">
+                <h4>Location</h4>
+                <p>MX</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; TadeoPantojaL | VoinD</h2>
+    </footer>
+    <script src="/js/logout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js
+    "></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/menuindextry.js"></script>
+</body>
+
+</html>
