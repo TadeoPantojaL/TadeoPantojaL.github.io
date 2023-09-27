@@ -6,7 +6,7 @@ function getCodigos() {
 
     if (inputID.length > 0) {
        
-    let url= "https://tadeopantojal.github.io/php/getCodigos.php"; 
+    let url= "/php/getCodigos.php"; 
         let formData = new FormData();
     formData.append("campo", inputID);
 console.log(url)
