@@ -3,9 +3,9 @@ body {
     padding: 0;
     background: #000000;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #8400ff6b, #000000), url(/BACKOFFICE/1-5-1024x538.webp);
+    background: -webkit-linear-gradient(to left, #8400ff6b, #000000), url(/BACKOFFICE/halloween\ fondo\ login.svg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #8400ff6b, #000000), url(/BACKOFFICE/1-5-1024x538.webp);
+    background: linear-gradient(to left, #8400ff6b, #000000), url(/BACKOFFICE/halloween\ fondo\ login.svg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size:auto, cover;
     font-family: sans-serif;
@@ -30,11 +30,12 @@ body {
 .login-box .img{
     height: 100px;  
     width: 100px;
-    border-radius: 50%;
+    border-radius: 100%;
     position: absolute;
     top:-50px;
     left: calc(50% - 50px);
 }
+
 .login-box h1{
     margin: 0;
     padding: 0 0 20px;

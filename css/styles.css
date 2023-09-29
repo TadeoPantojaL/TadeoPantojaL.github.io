@@ -777,12 +777,12 @@ button {
 
 header {
     width: 100%;
-    height: auto;
+    height: auto-;
     background: #000000;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #91009677, #000000), url(/BACKOFFICE/call-center-best-practices.webp);
+    background: -webkit-linear-gradient(to left, #91009677, #000000), url(/BACKOFFICE/Pink\ Purple\ Watercolor\ Halloween\ Tag.svg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #91009677, #000000), url(/BACKOFFICE/call-center-best-practices.webp);
+    background: linear-gradient(to left, #91009677, #000000), url(/BACKOFFICE/Pink\ Purple\ Watercolor\ Halloween\ Tag.svg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;

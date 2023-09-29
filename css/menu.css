@@ -1,1 +1,201 @@
-nav ul li{border-bottom-width:2.25pt}nav ul li a{color:aliceblue}nav ul li a{box-sizing:border-box}body,nav ul{margin-left:0}nav ul,body{margin-bottom:0}body{display:inline-flex}nav ul li a{background:#2c2c2c}nav ul ul ul,nav ul ul ul a,nav ul ul a,nav ul ul{overflow:hidden}nav ul li{border-bottom-style:solid}:root{--estado-buda:.3s}nav ul li a{display:block}nav ul li a{padding-left:7.5pt}nav ul,body{margin-right:0}nav ul li{border-bottom-color:#1e1e1e}nav ul li a{padding-bottom:4.5pt}body,nav ul{margin-top:0}body{min-height:100vh}nav ul li a{padding-right:7.5pt}nav ul li a{padding-top:4.5pt}nav ul li a{text-decoration:none}nav ul li{border-image:none}nav ul ul ul,nav ul ul{height:0in}nav ul{padding-left:0}nav ul ul a,nav ul ul ul a,nav ul li a,nav ul ul{transition:.5s}nav ul li a{width:100%}nav ul{padding-bottom:0}nav ul ul a{background:#414040}body{gap:22.5pt}nav ul{padding-right:0}body{font-family:Arial,Helvetica,sans-serif}header{width:150pt}nav ul{padding-top:0}header{background:#1e1e1e}nav ul{list-style:none}nav ul{line-height:.166666667in}:root{--cada-item:1.75pc}:root{--cantidad-items:0}nav ul ul ul a{background:#979797}
+:root {
+    --estado-buda: 0.3s;
+    --cada-item: 28px;
+    --cantidad-items: 0;
+}
+
+body {
+    display: inline-flex;
+    min-height: 100vh;
+    margin: 0;
+    gap: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 200px;
+    background: #1E1e1e;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 16px;
+}
+
+nav ul li {
+    border-bottom: 3px solid #1E1e1e;
+}
+
+nav ul li a {
+    color: aliceblue;
+    box-sizing: border-box;
+    background: #2c2c2c;
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+    transition: 0.5s;
+    width: 100%;
+}
+
+nav ul ul a{
+    overflow: hidden;
+    transition: 0.5s;
+    background: #414040;
+}
+nav ul ul ul a{
+    overflow: hidden;
+    transition: 0.5s;
+    background: #979797;
+}
+
+nav ul ul ul{
+    height: 0px;
+    overflow: hidden;
+ }
+nav ul ul li:hover ul {
+    height: calc(var(--cantidad-items) * var(--cada-item));
+}
+ nav ul ul {
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+nav ul li:hover .sec {
+    height: calc(var(--cantidad-items) * var(--cada-item));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* burguermenu */
+/* .bars__menu{
+    width: 30px;
+    height: 30px;
+    position:fixed;
+    transform: translate(-50%,-50%);
+    cursor:pointer ;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    }
+    .bars__menu > span{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: rgb(255, 14, 14);
+        margin-top: 6px;
+        transform-origin: 0px 100%;
+        transition: all 400ms;
+    }
+    .activeline1__bars-menu{
+        transform: rotate(45deg) translate(-2px,1px);
+    }
+    .activeline2__bars-menu{
+        opacity: 0;
+        margin-left: -30px;
+    }
+    .activeline3__bars-menu{
+        transform: rotate(-45deg) translate(-4px,2px);
+    }
+/* LAteral menu */
+/* .header{
+    width:0px;
+    background-color: #1E1e1e; 
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
+    position:fixed;
+}
+.header nav{
+    content-visibility: hidden;
+}
+header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+} */
+/* activo */
+/* .activeheader{
+    width:200px;
+    background-color: #1E1e1e; 
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
+    position:fixed;
+}
+.activeheader nav{
+    content-visibility: visible;
+}
+
+/* nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 16px;
+}
+nav ul li{
+border-bottom: 1px solid #1E1e1e;
+}
+nav ul li a:hover{
+    background: #086eeb;
+    transition: 0.5s;
+    }
+nav ul li ul a:hover{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,139,98,1) 40%, rgba(0,212,255,1) 65%, rgba(6,5,17,1) 100%);
+    transition: 0.5s;
+    }
+nav ul a{
+    box-sizing: border-box;
+    color: antiquewhite;
+    background: #121212;
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+    text-decoration: none;
+} 
+nav ul ul {
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+nav ul li:hover ul {
+    height: 70px;
+
+}
+nav ul ul li{
+    counter-increment: items;
+}
+nav ul li:hover ul  {  
+ height: calc(var(--cantidad-items) * var(--cada-item));
+ 
+}
+nav ul ul a {
+    background: transparent;
+} */
+/* body */
+
+/* body{
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    margin: 0px 200px;
+} */

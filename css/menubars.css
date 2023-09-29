@@ -1,1 +1,28 @@
-[class~=bars__menu]>span{display:block}[class~=bars__menu]>span{width:100%}.bars__menu{width:30px}.bars__menu{height:.3125in}[class~=bars__menu]>span{height:2px}.bars__menu{position:absolute}.bars__menu{transform:translate(-50%,-50%)}.bars__menu{cursor:pointer}[class~=bars__menu]>span{background:whitesmoke}.bars__menu{top:.208333333in}.bars__menu{left:1.25pc}[class~=bars__menu]>span{margin-top:6px}[class~=activeline1__bars-menu]{transform:rotate(45deg) translate(-2px,1px)}[class~=activeline2__bars-menu]{opacity:0}[class~=bars__menu]>span{transform-origin:0pc 100%}[class~=activeline2__bars-menu]{margin-left:-30px}[class~=activeline3__bars-menu]{transform:rotate(-45deg) translate(-4px,2px)}[class~=bars__menu]>span{transition:all 60ms}
+.bars__menu{
+width: 30px;
+height: 30px;
+position:absolute;
+transform: translate(-50%,-50%);
+cursor:pointer ;
+top: 20px;
+left: 20px;
+}
+.bars__menu > span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: whitesmoke;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 60ms;
+}
+.activeline1__bars-menu{
+    transform: rotate(45deg) translate(-2px,1px);
+}
+.activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30px;
+}
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translate(-4px,2px);
+}
