@@ -71,7 +71,7 @@ button.addEventListener('click', (e) => {
     'daguilar@netwey': { nombre: 'Dulce Aguilar', password: '12345' }
   }
   if (data.username in usuarios && data.password === usuarios[data.username].password) {
-    window.location.href = "/html/Avisosimportantes.html";
+    window.location.href = "/html/AvisosImportantes.html";
     localStorage.setItem("login_sucess", JSON.stringify(usuarios[data.username]));
   } else {
     alert("Credenciales incorrectas");
