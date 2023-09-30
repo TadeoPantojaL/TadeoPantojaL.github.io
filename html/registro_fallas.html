@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regiostro de fallas ADMINISTRADOR</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/imgs/ded.png" />
+    
+</head>
+<body>
+    <section class="barmenu">
+        <div class="bars__menu">
+            <span class="line1__bars-menu"></span>
+            <span class="line2__bars-menu"></span>
+            <span class="line3__bars-menu"></span>
+
+        </div>
+
+        <section class="others">
+            <section class="titlewelcome">
+               <div class="boxy"></div>
+                <h2>
+                    <!-- dar bienvenida personalizada -->
+                    <script>
+                        var d = new Date();
+                        var time = d.getHours();
+                        var userData = JSON.parse(localStorage.getItem('login_sucess'));
+                        var name = userData ? userData.nombre : "Invitado";
+
+                        if (time < 12) {
+                            document.write("Buenos días, " + name);
+                        } else if (time < 18) {
+                            document.write("Buenas tardes, " + name);
+                        } else {
+                            document.write("Buenas noches, " + name);
+                        }
+                    </script>
+                </h2>
+                <button class="boton" id="logout_button">Cerrar Sesion</button>
+            </section>
+            
+        </section>
+
+    </section>
+    <sec class="menus">
+        <nav id="menu-dash">
+            <img src="/BACKOFFICE/IMGLOGIN.svg" alt="">
+
+            <ul>
+                <li><a href="/html/AvisosImportantes.html">INICIO</a></li>
+                <li><a href="/html/AvisosImportantes.html">AVISOS</a></li>
+                <li><a href="/html/plantillas.html">PLANTILLAS</a>
+                    <ul class="secont" style="--cantidad-items:13">
+                        <li><a href="/html/plantillas.html#informacionatc">INFORMACIÓN</a>
+                            <ul class="second" style="--cantidad-items:4.2">
+                                <li><a href="/html/plantillas.html#informacionatc">ATC</a></li>
+                                <li><a href="/html/plantillas.html#informacionservicio">SERVICIO</a></li>
+                                <li><a href="/html/plantillas.html#recargas">RECARGAS</a></li>
+                                <li><a href="/html/plantillas.html#consumos">CONSUMOS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/plantillas.html#bienvenida">INTERACCIÓN</a>
+                            <ul class="second" style="--cantidad-items:5">
+                                <li><a href="/html/plantillas.html#bienvenida">BIENVENIDA</a></li>
+                                <li><a href="/html/plantillas.html#presencia">PRESENCIA</a></li>
+                                <li><a href="/html/plantillas.html#despedida">DESPEDIDA</a></li>
+                                <li><a href="/html/plantillas.html#fueradehorario">HORARIO</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/plantillas.html#actualizaciondedatos">CLIENTE</a>
+                            <ul class="second" style="--cantidad-items:5">
+                                <li><a href="/html/plantillas.html#actualizaciondedatos">ACTUALIZAR DATOS</a></li>
+                                <li><a href="/html/plantillas.html#cambiodecoordenadas">COORDENADAS</a></li>
+                                <li><a href="/html/plantillas.html#recargas">RECARGAS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/plantillas.html#lentitudintermitenciafdd">SERVICIO</a>
+                            <ul class="second" style="--cantidad-items:7">
+                                <li><a href="/html/plantillas.html#lentitudintermitenciafdd">LENTITUD E
+                                        INTERMITENCIA</a></li>
+                                <li><a href="/html/plantillas.html#fallamasiva">FALLA MASIVA</a></li>
+                                <li><a href="/html/plantillas.html#imeilock">IMEILOCK</a>
+                                </li>
+                                <li><a href="/html/plantillas.html#apn">APN</a>
+                                </li>
+                                <li><a href="/html/plantillas.html#tablaapn">TABLA APN</a>
+                                </li>
+                                <li><a href="/html/plantillas.html#reportenrmapn">REPORTE APN</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/html/herramientas.html">HERRAMIENTAS</a></li>
+                <li><a href="/html/recursos.html">RECURSOS</a>
+                    <ul style="--cantidad-items:3">
+                        <li><a href="/html/recursos.html#portafolio">ENLACES</a></li>
+                        <li><a href="/html/recursos.html#excel">EXCEL</a></li>
+                        <li><a href="/html/recursos.html#">RESOURSES</a></li>
+                    </ul>
+                </li>
+                <li><a href="/html/modems.html">MODEMS</a></li>
+                <li><a href="/html/Non-typing-report.html">Non-typing report</a></li>
+                <li><a href="/html/bajas.html">DNS DADOS DE BAJA</a></li>
+            </ul>
+        </nav>
+    </sec>
+    <header>
+        <h1>REGISTRO DE FALLAS NETWEY ALTAN</h1>
+    <P>Para supervisores y administradores</P>
+    </header>
+    
+    <main>
+      <div class="avisos">
+        <label for="estado">Estado de la republica: </label>    
+        <input type="text" name="estado" id="estado" placeholder="QUINTANA ROO">
+        <label for="localidad">Localidad: </label>
+        <textarea name="localidad" id="localidad" cols="10" rows="5" placeholder="Izúcar de Matamoros, Salinas, Zontecomatlán de López y Fuentes, Metztitlán, Tlacotepec de Benito Juárez, Felipe Carrillo Puerto, Tianguistengo, Susticacán, El Arenal, Venado, Bacalar."></textarea>
+        <label for="req">Requerimento: </label>
+        <input type="text" name="req" id="req" placeholder="INC00000XXXXXXX">
+        <label for="inicio">Fecha de Inicio: </label>
+        <input type="date" name="inicio" id="inicio">
+        <label for="detalles">Detalles: </label>
+        <textarea name="detalles" id="detalles" cols="10" rows="8" placeholder="Le informamos que nos encontramos enfrentando una falla que deja fuera de servicio 29 sitios en R8 Quintana Roo en los municipios de: Izúcar de Matamoros, Salinas, Zontecomatlán de López y Fuentes, Metztitlán, Tlacotepec de Benito Juárez, Felipe Carrillo Puerto, Tianguistengo, Susticacán, El Arenal, Venado, Bacalar. Nuestro equipo de soporte se encuentra en fase de análisis por lo cual no disponemos de ETR por el momento.
+        El servicio afectado es HBB/Datos, los usuarios de Movilidad no se ven afectados, puesto que se suben a servicio de Roaming automáticamente.
+        
+        Se ha enviado la notificación con los usuarios posiblemente afectados adjuntos.
+        [INICIO] | [INCIDENCIA CRÍTICA] |29 SITIOS FUERA DE SERVICIO| R8 | QUINTANA ROO | INC000005102896"></textarea>
+        <label for="actualizacion">Actualizaciones: </label>
+        <input type="text" name="actualizacion" id="actualizacion">
+        <label for="fin">Fecha de Fin: </label>
+        <input type="date" name="fin" id="fin">
+      </div>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>5620849509</p>
+            </div>
+            <div class="content-foo">
+                <h4>Github</h4>
+                <p><a class="github" target="_blank" href="https://github.com/TadeoPantojaL">TadeoPantojaL</a></p>
+            </div>
+            <div class="content-foo">
+                <h4>Location</h4>
+                <p>MX</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; TadeoPantojaL | VoinD</h2>
+    </footer>
+    <script src="/js/logout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js
+    "></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/menuindextry.js"></script>
+    <script src="/js/registrodefallasguardado.js"></script>
+</body>
+</html>
