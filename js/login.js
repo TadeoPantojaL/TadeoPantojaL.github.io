@@ -9,6 +9,7 @@ button.addEventListener('click', (e) => {
     password: pass.value
   }
   const usuarios = {
+  'kevin': { nombre: 'Kevin Nachito Velasquez', password: '12345' },
     'rrubio@netwey': { nombre: 'Rebeca Rubio', password: '12345' },
     'admin': { nombre: 'Tadeo Pantoja', password: 'admin' },
     'ggonzalez1@netwey': { nombre: 'Georgina Flores', password: '12345' },
